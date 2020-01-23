@@ -1,0 +1,80 @@
+
+/* Grid CSS */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+h1 {
+    font-family: 'roboto',sans-serif;
+    font-size: 1.7rem;
+    color: #707070;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 5%;
+}
+p {
+    color:#4B4B4B;
+    line-height: 2rem;
+}
+
+/* Navigation Bar */
+.navbar {
+    text-transform: uppercase;
+    color: #4B4B4B;
+}
+.navbar-brand {
+    color: #4B4B4B;
+    font-size: 1rem;
+}
+.nav {
+    color: #4B4B4B;
+    margin-top: 5%;
+    width: 35%;
+    padding-left:0;
+    padding-right: 0;
+    margin-right: 20px;
+}
+ .navName {
+     color: #4B4B4B;
+     border-bottom: 1px solid #AF9574;
+ }
+ .navName:hover {
+     border-bottom: 1px solid black ;
+     text-decoration: none;
+     color: #4B4B4B;
+ }
+
+
+ /*Buttons */
+ .btn-case {
+     background-color: transparent;
+     border: #95989A solid 1px;
+     text-transform: uppercase;
+     padding: 10px;
+     padding-left: 20px;
+     padding-right: 20px;
+ }
+ .btn-case:hover {
+     background-color: black;
+     border: none;
+     color: white;
+
+ }
+
+
+ /* Case */
+.caseRow {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+}
+ #img-card {
+     vertical-align: center;
+ }
+
