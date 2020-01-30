@@ -1,24 +1,48 @@
 
 /* Grid CSS */
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    font-family: 'open sans', sans-serif;
+    font-size: 16px;
     margin-right: 0;
     margin-left: 0;
     padding-left: 0;
     padding-right: 0;
 }
-h1 {
-    font-family: 'roboto',sans-serif;
-    font-size: 1.7rem;
-    color: #707070;
-    padding-right: 25px;
-    padding-left: 25px;
-    padding-bottom: 5%;
+.btn-primary {
+    font-family: 'open sans', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: black;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    padding-left: 5px;
 }
-p {
-    color:#4B4B4B;
-    line-height: 2rem;
+.btn-primary:hover {
+    background-color: transparent;
+} 
+h1 {
+    font-family: 'raleway',sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+h2 {
+    font-family: 'raleway',sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: black;
+}
+.btnCase {
+    text-decoration: none;
+}
+.btnCase:hover {
+    text-decoration: none;
+    color: #AF9574;
+}
+.chevronCase {
+    color: black;
 }
 
 /* Navigation Bar */
@@ -32,11 +56,11 @@ p {
 }
 .nav {
     color: #4B4B4B;
-    margin-top: 5%;
+    margin-top: 150px;
     width: 35%;
     padding-left:0;
     padding-right: 0;
-    margin-right: 20px;
+    margin-right: 120px;
 }
  .navName {
      color: #4B4B4B;
@@ -47,34 +71,46 @@ p {
      text-decoration: none;
      color: #4B4B4B;
  }
-
-
- /*Buttons */
- .btn-case {
-     background-color: transparent;
-     border: #95989A solid 1px;
-     text-transform: uppercase;
-     padding: 10px;
-     padding-left: 20px;
-     padding-right: 20px;
- }
- .btn-case:hover {
-     background-color: black;
-     border: none;
-     color: white;
-
+ .navbar-brand:hover{
+     color: #AF9574;
+     text-decoration: none;
  }
 
-
- /* Case */
-.caseRow {
-    margin-left: 70px;
-    margin-right: 70px;
-    margin-top: 150px;
-    margin-bottom: 150px;
-
-}
- #img-card {
-     vertical-align: center;
+ /*Intro*/
+ .row {
+  margin-top: 150px;
+  margin-bottom:200px;
+ }
+ .header {
+    margin-top: 250px;
+    left: 100px;
+ }
+ .caseCard {
+     position: relative;
+     width: 70%;
+     animation: zoom 4s ease-in-out;
+     transition: transform 1.5s linear;
+ }
+ @keyframes zoom {
+     from {
+         opacity: 0;
+     }
+ }
+ .caseCard:hover {
+     transform: scale(1.2);
  }
 
+ /* Media Qeries */
+ @media only screen and (max-width:1200px){
+     .row {
+         margin-top: 50px;
+         margin-bottom: 50px;
+     }
+     .header {
+         margin-top: 50px;
+     }
+     .caseCard {
+         left: 75px;
+
+     }
+ }
