@@ -29,6 +29,7 @@ h1 {
 }
 /* Navigation Bar */
 .navbar {
+    margin-top: 25px;
     text-transform: uppercase;
     color: #4B4B4B;
 }
@@ -36,27 +37,42 @@ h1 {
     color: #4B4B4B;
     font-size: 1rem;
 }
-.nav {
-    color: #4B4B4B;
-    margin-top: 150px;
-    width: 35%;
-    padding-left:0;
-    padding-right: 0;
-    margin-right: 120px;
-}
- .navName {
-     color: #4B4B4B;
-     border-bottom: 1px solid #AF9574;
- }
- .navName:hover {
-     border-bottom: 1px solid black ;
-     text-decoration: none;
-     color: #4B4B4B;
- }
  .navbar-brand:hover{
      color: #AF9574;
      text-decoration: none;
  }
+ /* CSS Naviation Menu New */
+ .topnav {
+    overflow: hidden;
+    margin-right: 100px;
+    background-color:transparent;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #4B4B4B;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .topnav a:hover {
+    background-color: none;
+    color: #AF9574
+  }
+  
+  .topnav a.active {
+    background-color:transparent;
+    color:#AF9574;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
  /* Content- Header */
  .rowHeader {
      margin-top: 200px;
@@ -221,18 +237,7 @@ header {
    padding-top: 75px;
 }
 }
-@media only screen and (max-width:1350px){
-    .nav {
-        width: 45%;
-        margin-top: 100px;
-        margin-right: 0;
-    }
-}
-@media only screen and (max-width:1250px){
-    .nav {
-        width: 100%;
-    }
-}
+
 @media only screen and (max-width:800px){
     .homeImg {
         left: 100px;
