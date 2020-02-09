@@ -61,8 +61,6 @@ h1 {
     right: 55px;
     border-bottom: solid 1px black;
   }
-
-  
   .topnav a:hover {
     background-color: none;
     color: #AF9574;
@@ -120,6 +118,9 @@ h1 {
  .content {
      text-align: left;
      margin-right: 200px;
+ }
+ .mainHeader {
+     margin-left: 120px;
  }
 
 
@@ -224,21 +225,23 @@ header {
 .styleImg {
     width: 55%;
     margin-left: 300px;
-    margin-top: 0;
-    margin-bottom: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     animation: an 4s ease-in-out;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
 }
 .hoverCard1 {
-    width:35%;
-    margin-top: 150px;
-    margin-left: 500px;
+    width:75%;
+    margin-left: 350px;
+    margin-bottom: 250px;
 }
-
-
-
-
-
+.styleboard {
+    width: 100%;
+    margin-top: 150px;
+}
+.mobilePages {
+    width: 100%;
+}
 /* Breakpoints */
 @media only screen and (max-width:1650px) {
      /* Content- Header */
@@ -315,12 +318,18 @@ header {
     .styleImg {
         margin-left: 100px;
     }
+    .hoverCard1 {
+        width:75%;
+        margin-left: 35px;
+        margin-bottom: 50px;
+    }
 }
 @media only screen and (max-width:500px){
     .rowCenter {
         margin-top: 20px;
         text-align: left;
-        margin-left: 20px;
+        margin-left: 10px;
+        padding: 0;
      }
      .contentCenter {
         text-align: left;
@@ -330,19 +339,19 @@ header {
      }
     .rowHeader {
         margin-top: 50px;
-        margin-left: 20px;
+        margin-left: 10px;
     }
     .content {
         text-align: left;
         margin-right: 20px;
     }
     .homeImg {
-        left: 35px;
+        left: 25px;
         width: 100%;
 
     }
     .mobileImg {
-        left:35px;
+        left:15px;
         width: 100%;
     }
     .timelineImg {
@@ -350,40 +359,40 @@ header {
         width: 100%;
     }
     .userImg {
-        margin-left: 25px;
+        margin-left:5px;
         width: 100%;
         margin-bottom: 25px;
     }
     .journeyImg {
-        margin-left: 25px;
+        margin-left: 10px;
         margin-bottom: 25px;
         margin-top: 0;
         width: 100%
     }
     .storyImg1 {
-        margin-left: 35px;
+        margin-left: 5px;
         margin-bottom: 25px;
         margin-top: 0;
         width: 100%;
     }
     .storyImg2 {
-        margin-left: 35px;
+        margin-left: 5px;
         margin-bottom: 25px;
         margin-top: 0;
         width: 100%;
     }
     .affinityImg {
-        width: 100%;
-        margin-left: 0px;
-        margin-right: 0;
-        padding: 0;
+       display: none;
+    }
+    .mainHeader {
+        margin-left: 25px;
     }
     .businessImg {
         width:100%;
-        margin-left:35px;
+        margin-left:5px;
     }
     .styleImg {
-        margin-left: 35px;
+        margin-left:5px;
         width: 100%;
     }
 }
